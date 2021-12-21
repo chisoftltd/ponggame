@@ -18,3 +18,7 @@ class Score(Turtle):
     def left_score(self, score):
         self.goto(50, 280)
         self.write(f"{score}", move=False, align="right", font=("Arial Black", 45, "normal"))
+
+    def increment_score(self):
+        self.score += 1
+        return self.score

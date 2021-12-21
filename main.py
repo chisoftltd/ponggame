@@ -30,6 +30,12 @@ while is_game_on:
     ball.move()
     screen.update()
     time.sleep(0.1)
-    if ball.ycor() > 250 or ball.ycor() < -250:
-        ball.bounce()
+    if ball.ycor() > 250 or ball.ycor() < -200:
+        ball.bounce_y()
+
+    if ball.distance(right_board) < 80 and ball.xcor() > 305 or ball.distance(left_board) < 80 and ball.xcor() > -305:
+        score.clear()
+        ball.bounce_x()
+        score.right_score(score.increment_score())
+        #ball.write("GAME OVER", move=False, align="center", font=("Arial Black", 12, "normal"))
 screen.exitonclick()
