@@ -37,5 +37,4 @@ while is_game_on:
         score.clear()
         ball.bounce_x()
         score.right_score(score.increment_score())
-        #ball.write("GAME OVER", move=False, align="center", font=("Arial Black", 12, "normal"))
 screen.exitonclick()

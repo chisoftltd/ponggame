@@ -12,12 +12,12 @@ class Score(Turtle):
         self.hideturtle()
 
     def right_score(self, score):
-        self.goto(-50, 280)
-        self.write(f"{score}", move=False, align="left", font=("Arial Black", 45, "normal"))
+        self.goto(-100, 200)
+        self.write(f"{score}", move=False, align="center", font=("Courier", 80, "normal"))
 
     def left_score(self, score):
-        self.goto(50, 280)
-        self.write(f"{score}", move=False, align="right", font=("Arial Black", 45, "normal"))
+        self.goto(100, 200)
+        self.write(f"{score}", move=False, align="center", font=("Courier", 80, "normal"))
 
     def increment_score(self):
         self.score += 1
